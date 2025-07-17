@@ -10,6 +10,7 @@ int binarySearch(int *arr, int n, int key)
          //when high and low are big values it exceeds beyond limit and causes interger overflow eg:10000+8000=18000
          //high-low calculates distance between them and /2 finds the mid value 10000-8000/2=1000 
          // low+  gives the mid value 8000+1000=9000
+         // (high-low)/2 only gives the offset or distance between them and not the midvalue of array if it is big in size  or high and low values differ
 
         if (arr[mid] == key)
         {
